@@ -10,8 +10,8 @@ app = Flask(__name__)
 
 # --- SPOTIFY CREDENTIALS ---
 # Get these from https://developer.spotify.com/dashboard
-CLIENT_ID = '5949e6b0e7284a13be79a0e1cccf2430'  # Set your Client ID
-CLIENT_SECRET = '1f5aabbcfaee422f9820fa4655a22a28'  # Set your Client Secret
+CLIENT_ID = os.environ.get('ClientID')  # Set your Client ID
+CLIENT_SECRET = os.environ.get('ClientSecret')  # Set your Client Secret
 
 # Initialize Spotify client
 try:
